@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calcIMC.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Calculador de IMC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry x:Name="peso_txt" Placeholder="Qual o seu peso? (KG)" Keyboard="Numeric" />
+        
+
+        <Entry x:Name="altura_txt" Placeholder="Qual a sua altura? (CM)" Keyboard="Numeric" />
+
+        <Label Text="" />
+        
+        <Button BackgroundColor="#2196F3" TextColor="white" FontSize="20" Text="CALCULAR!" Clicked="Button_Clicked" />
+
+        <Label Text="" />
+        <Label Text="" />
+       
+
+        <Image Source="https://www.ricardogozzano.com.br/wp-content/uploads/2020/03/tabela_imc.png"
+               HeightRequest="300" />
+        
+    </StackLayout>
+
+</ContentPage>
